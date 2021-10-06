@@ -43,9 +43,9 @@ smr = smr_async.SMR()
 
 async def main():
     print(await smr.get_point(
-			category="canvas", 
-			name="invert",
-			path="?avatar='link'"
+		category="canvas", 
+		name="invert",
+		path="?avatar='link'"
     ))
 
 loop = asyncio.get_event_loop()
