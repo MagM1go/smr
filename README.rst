@@ -19,6 +19,7 @@ pip install smr
 
 Sync Example
 --------------
+
 .. code:: py
 
 	from smr_py import smr_sync
