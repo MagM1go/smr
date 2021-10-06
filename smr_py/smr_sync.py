@@ -11,7 +11,7 @@ class SMR_client:
         self.__url = "https://some-random-api.ml"
 
     def get_point(self, category: Optional[str]=None, name: Optional[str]=None, path: Optional[str]=None):
-        request = self._session.get(f'{self.__url}/{category}/{name}' + path)
+        request = self._session.get(f'{self.__url}/{name}' if None in (category, path) else f'{self.__url}/{category}/{name}' if path == None else f'{self.__url}/{category}/{name}' + path)
         if request.ok:
             try:
                 data = request.json()

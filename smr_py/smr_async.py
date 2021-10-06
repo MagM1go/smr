@@ -24,7 +24,7 @@ class SMR:
 
         await smr_async.SMR().get_point(category="canvas", path="?avatar='avatar_url'..."
         """
-        async with self._session.get(f'{self.__url}/{category}/{name}' + path) as res:
+        async with self._session.get(f'{self.__url}/{name}' if None in (category, path) else f'{self.__url}/{category}/{name}' if path == None else f'{self.__url}/{category}/{name}' + path) as res:
             if res.ok:
                 try:
                     a = await res.json()
