@@ -35,6 +35,7 @@ Async example
 --------------
 
 .. code:: py
+
 	from smr_py import smr_async
 
 
