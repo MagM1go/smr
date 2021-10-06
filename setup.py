@@ -8,7 +8,7 @@ README = (HERE / "README.md").read_text(encoding="utf8")
 
 setuptools.setup(
 	name="smr_py",
-	version="1.0.8",
+	version="1.0.9",
 	author="MagMigo",
 	description="Simple wrapper for some-random-api on python.",
     long_description=README,
