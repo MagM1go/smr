@@ -27,7 +27,7 @@ Sync Example
 
 
 Async Example
-~~~~~~~~~~~~~
+-------------
 .. code:: py
 	from smr_py import smr_async
 
