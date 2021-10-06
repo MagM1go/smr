@@ -26,6 +26,8 @@ Sync Example
 	print(smr_sync.SMR_client().get_point(category="canvas", name="invert", path="?avatar='url'"))
 
 
+
+
 Async Example
 ----------
 .. code:: py
