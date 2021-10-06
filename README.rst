@@ -18,7 +18,6 @@ pip install smr
 
 Sync Example
 ~~~~~~~~~~~~~
-
 .. code:: py
 
 from smr_py import smr_sync
@@ -27,6 +26,9 @@ from smr_py import smr_sync
 print(smr_sync.SMR_client().get_point(category="canvas", name="invert", path="?avatar='url'"))
 
 
+Async Example
+~~~~~~~~~~~~~
+.. code:: py
 from smr_py import smr_async
 
 
@@ -36,5 +38,3 @@ async def main():
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 
-Async Example
-~~~~~~~~~~~~~
