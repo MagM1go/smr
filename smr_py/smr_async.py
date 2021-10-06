@@ -18,7 +18,7 @@ class SMR:
         self._url = "https://some-random-api.ml"
 
 
-    async def get_point(self, category: Optional[str], name: Optional[str], path: Optional[str]):
+    async def get_point(self, category: Optional[str]=None, name: Optional[str]=None, path: Optional[str]=None):
         """
         Examples:
 

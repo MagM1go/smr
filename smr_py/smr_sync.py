@@ -10,7 +10,7 @@ class SMR_client:
         self._session = requests
         self._url = "https://some-random-api.ml"
 
-    def get_point(self, category: Optional[str], name: Optional[str], path: Optional[str]):
+    def get_point(self, category: Optional[str]=None, name: Optional[str]=None, path: Optional[str]=None):
         request = self._session.get(f'{self._url}/{category}/{name}' + path)
         if request.ok:
             try:
