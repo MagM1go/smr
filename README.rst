@@ -2,6 +2,7 @@ SMR - Some Random Api
 ========
 
 Wrapper for https://some-random-api.ml/
+
 Endpoints: https://some-random-api.ml/endpoints
 
 Installing
