@@ -17,7 +17,7 @@ pip install smr
 
 
 Sync Example
-~~~~~~~~~~~~~
+----------
 .. code:: py
 
 	from smr_py import smr_sync
@@ -27,7 +27,7 @@ Sync Example
 
 
 Async Example
--------------
+----------
 .. code:: py
 	from smr_py import smr_async
 
