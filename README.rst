@@ -1,5 +1,8 @@
-# smr
-..code::
+.. code:: sh
+
+pip install smr
+
+.. code:: py
 from smr_py import smr_sync
 
 
