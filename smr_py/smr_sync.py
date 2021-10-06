@@ -8,10 +8,10 @@ class SMR_client:
 
     def __init__(self):
         self._session = requests
-        self._url = "https://some-random-api.ml"
+        self.__url = "https://some-random-api.ml"
 
     def get_point(self, category: Optional[str]=None, name: Optional[str]=None, path: Optional[str]=None):
-        request = self._session.get(f'{self._url}/{category}/{name}' + path)
+        request = self._session.get(f'{self.__url}/{category}/{name}' + path)
         if request.ok:
             try:
                 data = request.json()

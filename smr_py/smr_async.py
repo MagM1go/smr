@@ -15,7 +15,7 @@ class SMR:
         self._session = aiohttp.ClientSession(
             loop=loop
         )
-        self._url = "https://some-random-api.ml"
+        self.__url = "https://some-random-api.ml"
 
 
     async def get_point(self, category: Optional[str]=None, name: Optional[str]=None, path: Optional[str]=None):
@@ -24,7 +24,7 @@ class SMR:
 
         await smr_async.SMR().get_point(category="canvas", path="?avatar='avatar_url'..."
         """
-        async with self._session.get(f'{self._url}/{category}/{name}' + path) as res:
+        async with self._session.get(f'{self.__url}/{category}/{name}' + path) as res:
             if res.ok:
                 try:
                     a = await res.json()
