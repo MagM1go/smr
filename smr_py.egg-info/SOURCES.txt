@@ -1,0 +1,9 @@
+README.md
+setup.py
+smr_py/__init__.py
+smr_py/smr_async.py
+smr_py/smr_sync.py
+smr_py.egg-info/PKG-INFO
+smr_py.egg-info/SOURCES.txt
+smr_py.egg-info/dependency_links.txt
+smr_py.egg-info/top_level.txt
