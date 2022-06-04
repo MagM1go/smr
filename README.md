@@ -1,5 +1,5 @@
-<h1 align="center">SMR - Some Random Api</h1>
-<p align="center">Модуль для работы с <a href="https://some-random-api.ml">Some-Random</a>-API</p>
+<h1 align="center">Some Random Api wrapper</h1>
+<p align="center">Module for work with <a href="https://some-random-api.ml">SomeRandom</a>API</p>
 <p align="center">
 ========
 
@@ -11,43 +11,25 @@ Installing
 --------
 
 
-#### pip install smr
+#### pip install somerandom_wrapper
 
 
-Sync Example
+Example
 --------------
 
 ```Python
-from smr_py import smr_sync
-
-
-smr = smr_sync.SMR_client()
-
-print(smr.get_point(
-		category="canvas",
-		name="invert",
-		path="?avatar='link'"
-    ))
-
-```
-
-Async example
---------------
-
-```Python
-from smr_py import smr_async
 import asyncio
 
+from somerandom.api import SomeRandomApi
+from somerandom.endpoints import Filters
 
-smr = smr_async.SMR()
+api = SomeRandomApi(Filters(avatar='your-avatar-url', _filter='comrade'))
 
 async def main():
-    print(await smr.get_point(
-		category="canvas", 
-		name="invert",
-		path="?avatar='link'"
-    ))
+    data = await api.create_request()
+    return data
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+print(loop.run_until_complete(main()))
+
 ```

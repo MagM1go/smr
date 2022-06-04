@@ -7,10 +7,10 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text(encoding="utf8")
 
 setuptools.setup(
-	name="some_random_python",
-	version="1.0.13",
+	name="somerandom_wrapper",
+	version="2.0",
 	author="MagMigo",
-	description="Simple wrapper for some-random-api on python.",
+	description="Simple wrapper for some-random-api.",
 	long_description=README,
 	long_description_content_type="text/markdown",
 	url="https://github.com/MagM1go/smr",

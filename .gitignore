@@ -1,3 +1,4 @@
 dist
 some_random_python.egg-info
 .egg.info
+test.py
