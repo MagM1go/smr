@@ -5,7 +5,7 @@
 
 Wrapper for https://some-random-api.ml/
 
-Endpoints: https://some-random-api.ml/endpoints
+Endpoints: https://some-random-api.ml/endpoints (and in api: category name == endpoint in code (Filters and other))
 
 Installing
 --------
@@ -33,3 +33,4 @@ loop = asyncio.get_event_loop()
 print(loop.run_until_complete(main()))
 
 ```
+

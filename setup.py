@@ -7,7 +7,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text(encoding="utf8")
 
 setuptools.setup(
-	name="somerandom_wrapper",
+	name="some_random_python",
 	version="2.0",
 	author="MagMigo",
 	description="Simple wrapper for some-random-api.",
