@@ -20,17 +20,15 @@ Example
 ```Python
 import asyncio
 
-from somerandom.api import SomeRandomApi
-from somerandom.endpoints import Filters
+from somerandom.main import SomeRandomApi
 
-api = SomeRandomApi(Filters(avatar='your-avatar-url', _filter='comrade'))
+api = SomeRandomApi()
 
 async def main():
-    data = await api.create_request()
+    data = await api.animal('dog')
     return data
 
-loop = asyncio.get_event_loop()
-print(loop.run_until_complete(main()))
+print(asyncio.get_event_loop().run_until_complete(main()))
 
 ```
 
