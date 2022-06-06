@@ -1,12 +1,11 @@
 import asyncio
 
-from somerandom.api import SomeRandomApi
-from somerandom.endpoints import Anime
+from somerandom.main import SomeRandomApi
 
-api = SomeRandomApi(Anime(action='hug'))
+api = SomeRandomApi()
 
 async def main():
-    data = await api.create_request()
+    data = await api.anime('hug')
     return data
 
 loop = asyncio.get_event_loop()
