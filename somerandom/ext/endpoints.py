@@ -41,7 +41,6 @@ WELCOME_IMAGE = "/welcome/img/1/stars2?name={name}" + \
                            "&username={username}&discriminator={discriminator}" + \
                            "guildName={guild_name}&textcolor={text_color}&memberCount={member_count}" + \
                            "&key={key}"
-
 # Premium
 PREMIUM_AMONGUS = "/premium/amongus?avatar={avatar}&username={username}&key={key}&imposter={imposter}"
 PREMIUM_PETPET = "/premium/petpet?avatar={avatar}&key={key}"

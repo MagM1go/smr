@@ -7,7 +7,7 @@ from .route import Route
 
 class RequesterABC(ABC):
     @abstractmethod
-    async def request(self, url: str, method: Literal['GET']): ...
+    async def request(self, route: Route) -> Route: ...
 
 
 class Requester(RequesterABC):
