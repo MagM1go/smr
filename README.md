@@ -24,11 +24,7 @@ from somerandom.main import SomeRandomApi
 
 api = SomeRandomApi()
 
-async def main():
-    data = await api.animal('dog')
-    return data
-
-print(asyncio.get_event_loop().run_until_complete(main()))
+print(asyncio.run(api.animal('dog')))
 
 ```
 
